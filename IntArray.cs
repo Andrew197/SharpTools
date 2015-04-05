@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,17 +32,8 @@ namespace Sharptools.Arrays
 
             if (at == arrayType.NO_DUPLICATES)
             {
-                bool [] used = new bool[array.Length];                                      //keep track of what's been applied to the array
-                for(int i=0;i<used.Length;i++) used[i] = false;                             //"zero out" the boolean array
-                int rnd = rand.Next(0, array.Length);                                       //pick the first random number
-
-                //shuffle the array
-                for(int i=0;i<array.Length;i++)
-                {
-                    while (used[rnd]) rnd = rand.Next(0, array.Length);                     //keep picking a number until we get one that hasn't been picked
-                    array[i] = rnd;                                                         //use the picked value
-                    used[rnd] = true;                                                       //mark picked value as used
-                }
+                for (int i = 0; i < array.Length; i++) array[i] = i;
+                    array = shuffle(array);
                 return array;
             }
             else
@@ -61,6 +52,27 @@ namespace Sharptools.Arrays
                 outStr += array[i] + " ";
 
             return outStr;
+        }
+
+        public static int [] shuffle(int [] array)
+        {
+            Random rand = new Random();
+
+            bool[] used = new bool[array.Length];                                       //keep track of what's been applied to the array
+            for (int i = 0; i < used.Length; i++) used[i] = false;                      //"zero out" the boolean array
+            int rnd = rand.Next(0, array.Length);                                       //pick the first random number
+
+            //create the array to copy into
+            int[] result = new int[array.Length];
+
+            //shuffle the array
+            for(int i=0;i<array.Length;i++)
+            {
+                while (used[rnd]) rnd = rand.Next(0, array.Length);                     //keep picking a number until we get one that hasn't been picked
+                result[i] = array[rnd];                                                 //use the picked value
+                used[rnd] = true;                                                       //mark picked value as used
+            }
+            return result;
         }
 
         public static int binarySearch(int[] array, int key)
