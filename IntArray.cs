@@ -22,6 +22,7 @@ namespace Sharptools.Arrays
         public static int[] newRandomArray(int len)               { return populate(arrayType.NORMAL, len); }
         public static int[] newRandomArray(arrayType at)          { return populate(at, -1);                }
         public static int[] newRandomArray(int len, arrayType at) { return populate(at, len);               }
+        public static int[] newTestArray() { return new int []{5, 9, 15, 10, 3, 16, 8, 6, 13, 12, 7, 17, 14, 19, 1, 18, 2, 11, 4, 0}; }
 
         //internal
         private static int[] populate(arrayType at, int len)
@@ -75,6 +76,7 @@ namespace Sharptools.Arrays
             return result;
         }
 
+        //the classic binary search algorithm
         public static int binarySearch(int[] array, int key)
         {
             int low = 0;
