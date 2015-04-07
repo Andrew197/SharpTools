@@ -99,19 +99,20 @@ namespace Sharptools.Trees
 
                 //eliminate rework by handling trivial cases seperately
                 else if (n.getLeft() != null)
+                {
                     if (parent.getLeft() == n) parent.setLeft(n.getLeft());
                     else if (parent.getRight() == n) parent.setLeft(n.getLeft());
-
+                }
                 else if (n.getRight() != null)
-
-                    if (parent.getLeft() == n) parent.setLeft(n.getRight());            
-                    else if (parent.getRight() == n) parent.setLeft(n.getRight());      
-
+                {
+                    if (parent.getLeft() == n) parent.setLeft(n.getRight());
+                    else if (parent.getRight() == n) parent.setLeft(n.getRight());
+                }
                 else
-
+                { 
                     if (parent.getLeft() == n) parent.setLeft(null);                    //delink left
                     else if (parent.getRight() == n) parent.setRight(null);             //delink right
-
+                }
             }
             else
                 if (n.getLeft() != null)  delete(n.getLeft() , n, ndata);               //search left child for target
