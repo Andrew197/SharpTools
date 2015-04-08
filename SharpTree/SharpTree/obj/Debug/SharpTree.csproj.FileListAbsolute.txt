@@ -1,0 +1,6 @@
+c:\users\andrew\documents\visual studio 2013\Projects\SharpTree\SharpTree\bin\Debug\SharpTree.exe.config
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\SharpTree\SharpTree\obj\Debug\SharpTree.csprojResolveAssemblyReference.cache
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\SharpTree\SharpTree\bin\Debug\SharpTree.exe
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\SharpTree\SharpTree\bin\Debug\SharpTree.pdb
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\SharpTree\SharpTree\obj\Debug\SharpTree.exe
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\SharpTree\SharpTree\obj\Debug\SharpTree.pdb

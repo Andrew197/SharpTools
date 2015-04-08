@@ -1,0 +1,7 @@
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\SharpToolsTests\SharpToolsTests\bin\Debug\SharpToolsTests.dll
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\SharpToolsTests\SharpToolsTests\bin\Debug\SharpToolsTests.pdb
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\SharpToolsTests\SharpToolsTests\bin\Debug\SharpTree.exe
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\SharpToolsTests\SharpToolsTests\bin\Debug\SharpTree.pdb
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\SharpToolsTests\SharpToolsTests\obj\Debug\SharpToolsTests.csprojResolveAssemblyReference.cache
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\SharpToolsTests\SharpToolsTests\obj\Debug\SharpToolsTests.dll
+C:\Users\Andrew\Documents\Visual Studio 2013\Projects\SharpToolsTests\SharpToolsTests\obj\Debug\SharpToolsTests.pdb
